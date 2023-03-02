@@ -1,0 +1,337 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial;
+    color: white;
+}
+
+body {
+    background: url(image.png);
+    background-color: #11405E;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 80px;
+    background: linear-gradient(90deg, #F0A20E -2.5%, #E36360 34.01%, #B64F90 66.5%, rgba(168, 158, 237, 0.77) 104.03%);
+}
+
+.hackfolio1 {
+    width:  100px;
+    height: 80px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li a {
+    padding: 0 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: inline-block; 
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 25px; 
+}
+li a::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0px;
+    background: #c4c4f7;
+    transition: all .5s;
+}
+
+li a:hover::after {
+    width: 100%;
+}
+
+
+
+
+.content1 {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.column1 {
+    display: flex;
+    justify-content: center;
+}
+.image {
+    margin-left: 6%;
+}
+.time {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left:  0px;
+    margin-top: -20px;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+    margin-right: 60px;
+    border: 1px solid rgba(240, 162, 14, 1);
+    padding: 10px;
+    box-sizing: border-box;
+    width: 30%;
+    height: 60%;
+    mix-blend-mode: lighten;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    background: linear-gradient(180deg, #5A5290 0%, #FFFFFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.seconds {
+    padding-left: 2px;
+}
+
+.minutes {
+    padding-left: 5px;
+}
+
+.minutes1-div {
+    padding-top:  11px;
+    box-sizing: border-box;
+    mix-blend-mode: lighten;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    background: linear-gradient(180deg, #5A5290 0%, #FFFFFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.num-days {
+    top: 20px;
+    padding: 10px;
+    padding-top: 2px;
+    width: 102px;
+    height: 68px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 75px;
+    line-height: 91px;
+    background: linear-gradient(180deg, #F0A20E 0%, #FFFFFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.registre-div {
+    top: 12px;
+    left: 38px;
+    padding: 10px;
+    padding-left: 9px;
+    padding-bottom: 9px;
+    font-family: 'Arista Pro Trial';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 64px;
+    padding-left: 30px;
+    text-align: center;
+    color: #D9D9D9; 
+}
+
+.registre {
+    background-color: aliceblue;
+    position: absolute;
+    left: 60%;
+    height: 16%;
+    width: 35%;
+    top: 85%;
+    box-sizing: border-box;
+    background: #11405E;
+    border: 5px solid #5A5290;
+    border-radius: 10px;
+}
+
+
+
+.hackfolio {
+    width: 160%;
+    height: 110%;
+}
+
+.end-page {
+    height: 140px;
+    margin-top: 8%;
+}
+
+.dessaine-img {
+    width: 100%;
+}
+/*    sponsors    */
+
+.sponsors {
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+}
+.text {
+    height:10% ;
+    margin-top: 2%;
+}
+.text h1 {
+    font-family: 'Arista Pro Trial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 85px;
+    line-height: 93px;
+    background: linear-gradient(90deg, #A89EED 0%, #F0A20E 54.15%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.asus {
+    margin-top: 40%;
+    width: 20%;
+    height: 20%;
+    margin-right: 2%;
+    margin-left: -8%;
+}
+.gethub {
+    margin-top: 10%;
+    width: 20%;
+    height: 20%;
+    margin-right: 2%;
+    margin-left: -16%;
+}
+
+.appel {
+    margin-top: 40%;
+    width: 20%;
+    height: 20%;
+    margin-right: 0%;
+    margin-left: -14%;
+}
+
+.appel-img {
+    width: 150%;
+    height: 150%;
+    margin-right: 80px;
+}
+.asus-img {
+    width: 155%;
+    height: 155%;
+}
+.gethub-img {
+    width: 170%;
+    height: 170%;
+}
+/*------------- agenda ---------------*/
+.agenda {
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+}
+
+.content2 {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.agenda-day ul {
+    flex-direction: column;
+    padding-right: 50px;
+    margin-right: 60px;
+    border: 1px solid rgba(240, 162, 14, 1);
+    padding: 10px;
+    box-sizing: border-box;
+    width: 66%;
+    height: 60%;
+    mix-blend-mode: lighten;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    background: linear-gradient(180deg, #5A5290 0%, #FFFFFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+ul li a {
+    padding: 0 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 25px; 
+}
+li a::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0px;
+    background: #c4c4f7;
+    transition: all .5s;
+}
+
+li a:hover::after {
+    width: 100%;
+}
+.photo {
+    position: relative;
+    
+}
+.text1 {
+    position: absolute;
+    text-align: center;
+    font-family: Georgia;
+    color: white;
+    width: 70%;
+}

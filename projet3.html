@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="projet3.css">
+    </head>
+    <body>
+        <section class="home">
+            <nav>
+                <div>
+                    <img class="hackfolio1" src="removebg.png">
+                </div>
+                <ul>
+                    <li><a href="#langue">HOME</a></li>
+                    <li><a href="#reserver">ABOUT</a></li>
+                    <li><a href="#contact">SPEAKERS</a></li>
+                    <li><a href="#contact">AGENDA</a></li>
+                    <li><a href="#sponsors">SPONSORS</a></li>
+                    <li><a href="#contact">FAQ</a></li>
+                </ul>
+            </nav> 
+            <div class="content1">
+                <div class="column1">
+                    <div class="image">
+                        <img class="hackfolio" src="hackfolio1.png">
+                    </div>
+                    <div class="time">
+                        <div class="days"> 
+                            <div class="days-div"> DAYS </div>
+                            <div class="num-days" id="days"> 00 </div>
+                        </div>
+                        
+                        <div class="hours"> 
+                            <div class="hours-div"> HOURS </div>
+                            <div class="num-days" id="hours"> 00 </div>
+                        </div>
+                        
+                        <div class="minutes1-div" >M</div>
+                        <div class="minutes"> 
+                            <div class="minutes-div"> INUTES </div>
+                            <div class="num-days" id="minutes"> 00 </div>
+                        </div>
+                        
+                        <div class="minutes1-div" >S</div>
+                        <div class="seconds"> 
+                            <div class="second-div"> ECONDS </div>
+                            <div class="num-days" id="seconds"> 00 </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="registre">
+                    <div class="registre-div"> REGISTER </div>              
+                </div>
+            </div>   
+       </section>
+       <div class="end-page">
+        <img class="dessaine-img" src="footer1.png">
+       </div>
+
+       <section id="sponsors" class="sponsors">
+            <div class="text">
+                <h1> SPONSORS </h1>
+            </div>
+            <div class="images">
+                <div class="asus">
+                    <img src="image(2).png" class="asus-img"> 
+                </div>
+                <div class="gethub">
+                    <img src="image(1).png"class="gethub-img">
+                </div>
+                <div class="appel">
+                    <img src="image(3).png"class="appel-img">
+                </div>
+            </div>
+       </section>
+       <div class="end-page">
+        <img class="dessaine-img" src="footer1.png">
+       </div>
+
+
+
+       <script>
+            var countdowndate = new Date("jan 01, 2023 00:00:00").getTime();
+            var x = setInterval(function(){
+                var now = new Date().getTime();
+                var distance = countdowndate - now;
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                document.getElementById("days").innerHTML = days;
+                document.getElementById("hours").innerHTML = hours;
+                document.getElementById("minutes").innerHTML = minutes;
+                document.getElementById("seconds").innerHTML = seconds;
+                
+                if(distance<0){
+                    clearInterval(x);
+                    document.getElementById("days").innerHTML = "00";
+                    document.getElementById("hours").innerHTML = "00";
+                    document.getElementById("minutes").innerHTML = "00";
+                    document.getElementById("seconds").innerHTML = "00";
+                }
+            },1000);
+            // init library
+            AOS.init();
+       </script>
+
+    </body>
+</html>
